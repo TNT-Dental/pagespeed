@@ -11,6 +11,7 @@ gzip_proxied any;
 gzip_types   text/plain text/css application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript image/x-icon image/bmp image/svg+xml;
 gzip_vary    on;
 ```
+[Source](https://support.plesk.com/hc/en-us/articles/213380049-How-to-enable-gzip-compression-for-nginx-on-Plesk-server)
 
 ### Also
 
@@ -22,8 +23,10 @@ add_header Pragma "public";
 add_header Cache-Control "max-age=31536000, public";
 }
 ```
+[Source](https://support.plesk.com/hc/en-us/articles/115001374153-How-to-enable-leverage-browser-caching-for-nginx-)
 
-## Resources
-[ Source 1 ](https://support.plesk.com/hc/en-us/articles/213380049-How-to-enable-gzip-compression-for-nginx-on-Plesk-server)
-[ Source 2 ](https://support.plesk.com/hc/en-us/articles/115001374153-How-to-enable-leverage-browser-caching-for-nginx-)
-[ Optimize images with Kraken or similar ](https://kraken.io/web-interface)
+## Homepage Optimization and Template Cleanup
+
+
+## Useful Links
+[Optimize images with Kraken or similar](https://kraken.io/web-interface)
