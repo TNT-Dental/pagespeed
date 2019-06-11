@@ -30,3 +30,4 @@ add_header Cache-Control "max-age=31536000, public";
 
 ## Useful Links
 [Optimize images with Kraken or similar](https://kraken.io/web-interface)
+[PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
