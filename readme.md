@@ -27,9 +27,11 @@ add_header Cache-Control "max-age=31536000, public";
 
 ## Homepage Optimization and Template Cleanup
 ### Homepage videos
-|Banner Videos|Is it Vimeo Only, ask for youtube account/video upload|
-|Youtube embeds|Add lazyload with class .youtube and make sure the thumbnail is beign pulled from youtube|
-|Testimonials videos|Add lazyload or data-player and data-embed|
+Type | Desc 
+-----|-----
+Banner Videos|Is it Vimeo Only, ask for youtube account/video upload
+Youtube embeds|Add lazyload with class .youtube and make sure the thumbnail is beign pulled from youtube
+Testimonials videos|Add lazyload or data-player and data-embed
 [Read More](https://github.com/TNT-Dental/tntvideos)
 
 ## Useful Links
