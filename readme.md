@@ -1,7 +1,7 @@
 # TNT PageSpeed Process
 
 ## Server Side
-Make sure you add these to the server settings under the correct domain name.
+Make sure to add these to the server settings under the correct domain name.
 
 ```
 gzip         on;
