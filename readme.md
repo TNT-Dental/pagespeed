@@ -1,7 +1,7 @@
 # TNT PageSpeed Process
 
 ## 1. Server Side
-Make sure to add these to the Apache & nginx Settings for the correct domain name under Additional nginx directives.
+Make sure to add these to the 'Apache & nginx Settings' for the correct domain name under 'Additional nginx directives'.
 
 ```
 gzip         on;
