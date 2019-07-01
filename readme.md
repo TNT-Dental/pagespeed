@@ -1,6 +1,6 @@
 # TNT PageSpeed Process
 
-## Server Side
+## 1. Server Side
 Make sure to add these to the Apache & nginx Settings for the correct domain name.
 
 ```
@@ -24,7 +24,7 @@ add_header Cache-Control "max-age=31536000, public";
 ```
 [Source](https://support.plesk.com/hc/en-us/articles/115001374153-How-to-enable-leverage-browser-caching-for-nginx-)
 
-## Homepage Optimization and Template Cleanup
+## 2. Homepage Optimization and Template Cleanup
 View the current live desktop site and look for:
 - Banner/Welcome videos
 - Youtube embeds in the homepage ie. ( testimonials sections )
@@ -48,17 +48,17 @@ Testimonials videos|Add lazyload or data-player and data-embed
 
 [TNT Video scripts](https://github.com/TNT-Dental/tntvideos)
 
-## Optional
+## 3. Hiding Elements(optional)
 
 - Display "none" google embeded maps for mobile ie. ( look for #map, #g-map, #fo-map )
 - Hide high resolution stock images
 - Check performance of google fonts (https://fonts.google.com/)
 
-## Advanced
+## 4. Advanced
 
 - Compress JQuery scripts
 - Combine scripts files (backup old files)
 
-## Useful Links
+## 5. Useful Links
 - [Optimize images with Kraken or similar](https://kraken.io/web-interface)
 - [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
