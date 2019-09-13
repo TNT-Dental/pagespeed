@@ -58,6 +58,22 @@ Testimonials videos|Add lazyload or data-player and data-embed
 
 - Compress JQuery scripts
 - Combine scripts files (backup old files)
+- Generate iframes or scripts with javascript:
+```html
+<!-- Dynamic Content -->
+<script>
+	function addMap() {
+	    // Adds an element to the document
+	    var p = document.getElementById("map");
+	    var newElement = document.createElement("iframe");
+	    newElement.setAttribute('src', 'https://www.google.com/maps/...');
+	    newElement.setAttribute('width', '100%');
+	    newElement.setAttribute('height', '480');
+	    p.appendChild(newElement);
+	}
+	if( window.screen.width >= 600  ) {	addMap(); }
+</script>	
+```
 
 ## 5. Useful Links
 - [Optimize images with Kraken or similar](https://kraken.io/web-interface)
