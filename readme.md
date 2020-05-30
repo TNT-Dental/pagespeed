@@ -38,13 +38,14 @@ If there are videos in the homepage:
 - Does it have a fundation.js or tnt-videos.js?
 - Make backups of all old script files
 - Combine and comment out any extra files
+- Replace any video thumbnail coming from youtube with screenshots resized and uploaded to the cms.
 
 #### Homepage videos
 Type | Desc 
 -----|-----
 Banner Videos|Is it Vimeo Only, ask for youtube account/video upload
 Youtube embeds|Add lazyload with class .youtube and make sure the thumbnail is beign pulled from youtube
-Testimonials videos|Add lazyload or data-player and data-embed
+Testimonials videos|Add lazyload or data-player and data-embe
 
 [TNT Video scripts](https://github.com/TNT-Dental/tntvideos)
 
@@ -74,7 +75,22 @@ Testimonials videos|Add lazyload or data-player and data-embed
 	if( window.screen.width >= 600  ) {	addMap(); }
 </script>	
 ```
+- Add lazy loading to images by adding class "lazyload" loading=“lazy” and chang src to data-src…  and link to lazyload script at the bottom of the html
+```html
+<img class="lazyload" loading="lazy" data-src="assets/images/banner.jpg">
+<script src="assets/js/lazysizes.min.js" async=""></script>
+``` 
+
+- Create smaller sized copies of large photos at 600px wide and wrap the original img in the picture element so it only downloads the image according to the screen size. Can also add lazy loading to the image.
+```html
+<picture>
+     <source srcset="assets/images/banner-1-sm.jpg" media="(max-width: 600px)"> 
+     <img src="assets/images/banner-1.jpg”  alt="" >
+</picture>
+```
 
 ## 5. Useful Links
-- [Optimize images with Kraken or similar](https://kraken.io/web-interface)
+- [Optimize images with Kraken OR ](https://kraken.io/web-interface)
+- [Optimize images TinyPing](https://tinypng.com/)
+
 - [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
