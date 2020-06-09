@@ -60,6 +60,7 @@ Testimonials videos|Add lazyload or data-player and data-embe
 - Compress JQuery scripts
 - Combine scripts files (backup old files)
 - Generate iframes or scripts with javascript:
+### Example 1
 ```html
 <!-- Dynamic Content -->
 <script>
@@ -73,6 +74,20 @@ Testimonials videos|Add lazyload or data-player and data-embe
 	    p.appendChild(newElement);
 	}
 	if( window.screen.width >= 600  ) {	addMap(); }
+</script>	
+```
+### Example 2
+```html
+<!-- Dynamic Content -->
+<script>
+    function captcha() {
+    // Adds an element to the document
+    var p = document.getElementsByTagName('head')[0];
+    var newElement = document.createElement("script");
+    newElement.setAttribute('src', 'https://www.google.com/recaptcha/api.js');
+    p.appendChild(newElement);
+}
+if( window.screen.width >= 600  ) {	captcha(); }
 </script>	
 ```
 - Add lazy loading to images by adding class "lazyload" loading=“lazy” and chang src to data-src…  and link to lazyload script at the bottom of the html
